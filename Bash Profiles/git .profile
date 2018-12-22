@@ -29,6 +29,7 @@ orange="\e[0;38;5;172m"
 yellow="\e[0;1;33m"
 green="\e[0;1;32m"
 cyan="\e[0;1;36m"
+magenta="\e[0;1;35m"
 white="\e[0;97m"
 reset="\e[0m"
 
@@ -38,8 +39,9 @@ trap 'echo -n -e "$reset"' DEBUG
 # '\u' adds the name of the current user to the prompt
 # '\H' adds the full hostname to the prompt
 # '\w' adds the name of the current directory
+# '\$(date +%d.%m.%Y) \A' adds the date and time in the Format DD.MM.YYYY HH:MM
 # '\$(__git_ps1)' git status prompt (generates a space before it even if empty)
-export PS1="\[$red\]\u\[$orange\]@\[$yellow\]\H \[$green\]\w \[$cyan\]\$(__git_ps1)
+export PS1="\[$red\]\u\[$orange\]@\[$yellow\]\H \[$green\]\w \[$cyan\]\$(date +%d.%m.%Y) \A \[$magenta\]\$(__git_ps1)
 \[$white\]$ "
 
 alias l="ls -laF"
