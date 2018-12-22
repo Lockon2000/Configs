@@ -33,8 +33,9 @@ magenta="\e[0;1;35m"
 white="\e[0;97m"
 reset="\e[0m"
 
+# HAS CAUSED ISSUES, SO WILL BE DISABLED FOR THE TIME BEING
 # reset the colors after my command
-trap 'echo -n -e "$reset"' DEBUG
+# trap 'echo -n -e "$reset"' DEBUG
 
 # '\u' adds the name of the current user to the prompt
 # '\H' adds the full hostname to the prompt
@@ -42,7 +43,7 @@ trap 'echo -n -e "$reset"' DEBUG
 # '\$(date +%d.%m.%Y) \A' adds the date and time in the Format DD.MM.YYYY HH:MM
 # '\$(__git_ps1)' git status prompt (generates a space before it even if empty)
 export PS1="\[$red\]\u\[$orange\]@\[$yellow\]\H \[$green\]\w \[$cyan\]\$(date +%d.%m.%Y) \A \[$magenta\]\$(__git_ps1)
-\[$white\]$ "
+\[$reset\]$ "
 
 alias l="ls -laF"
 alias ..="cd .."
