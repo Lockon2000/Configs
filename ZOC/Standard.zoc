@@ -33,7 +33,7 @@ KbdCodePage=1000
 
 // SESSION PROFILE: COLOR
 ColorBack=0
-ColorFore=7
+ColorFore=15
 ColorItalic=0
 ColorBlink=0
 ColorBold=0

@@ -1,6 +1,6 @@
 ZOC7.22.0 // HOST DIRECTORY D:\ZOC7 Dateien\Options\HostDirectory.zocini
 
-# LAST WRITTEN 2018-12-15 17:46:12
+# LAST WRITTEN 2018-12-22 21:19:50
 
 [STRUCTURE]
 
@@ -22,8 +22,8 @@ Section#1=AWS LightSail
 [HOST]
 section=0
 folder=0
-handle=1544892175
-name="UbuntuBionic64"
+handle=1545509930
+name="UbuntuCosmic64"
 connectto="localhost:2222"
 deviceid=-1
 emulationid=-1
@@ -36,7 +36,7 @@ qaccess=no
 icon=7
 username="vagrant"
 password=""
-authfile="D:\VMs\UbuntuBionic64\.vagrant\machines\default\virtualbox\private_key"
+authfile="D:\VMs\UbuntuCosmic64\.vagrant\machines\default\virtualbox\private_key"
 authglobal=no
 script=""
 scriptparm=""

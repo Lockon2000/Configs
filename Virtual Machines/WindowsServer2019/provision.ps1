@@ -1,2 +1,1 @@
-get-host
-write-output hallo!!!!
+Copy-Item .\configfiles\* $env:USERPROFILE\Documents\WindowsPowerShell\ -Force
