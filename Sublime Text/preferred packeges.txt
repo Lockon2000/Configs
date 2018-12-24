@@ -1,5 +1,7 @@
 Main Packeges (Installed in Every instance):
 
 SideBarEnhancements (With Modified Settings)
+Kite
+
 PowerShell
 AutoHotkey

@@ -1,6 +1,6 @@
 Tipps:
 
-1. If you know of a key combination that executes the command you want, you may enter "sublime.log_commands(True)" in the console. Then press the appropriate key binding. This will print out the command being executed to the console and the associated arguments.
+1. If you know of a key combination that executes the command you want, you may enter "sublime.log_commands(True)" in the console. Then press the appropriate key binding. This will print out the command being executed to the console and the associated arguments. Also "sublime.log_input(True)" logs all individual key presses and key combination presses.
 
 -----
 
@@ -19,13 +19,11 @@ _______________________________________________________________________________
 My own key bindings:
 
 [
-    // Ctrl + Shift + b --> Cancel Build
-    { "keys": ["ctrl+shift+b"], "command": "cancel_build" },
+    // Ctrl + Alt + b --> Cancel Build
+    { "keys": ["ctrl+alt+b"], "command": "cancel_build" },
     // Alt + Space --> Go to end of line
     { "keys": ["alt+space"], "command": "move_to", "args": {"to": "eol", "extend": false} },
     // Alt + Shift + Space --> Go to beginnig of line
     { "keys": ["alt+shift+space"], "command": "move_to", "args": {"to": "bol", "extend": false} }
 ]
-
-
 
