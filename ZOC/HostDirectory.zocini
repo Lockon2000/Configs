@@ -1,6 +1,6 @@
 ZOC7.22.0 // HOST DIRECTORY D:\ZOC7 Dateien\Options\HostDirectory.zocini
 
-# LAST WRITTEN 2018-12-22 21:19:50
+# LAST WRITTEN 2018-12-26 23:08:33
 
 [STRUCTURE]
 
@@ -24,7 +24,7 @@ section=0
 folder=0
 handle=1545509930
 name="UbuntuCosmic64"
-connectto="localhost:2222"
+connectto="localhost:2200"
 deviceid=-1
 emulationid=-1
 deviceopts="-"
@@ -67,7 +67,7 @@ section=0
 folder=0
 handle=1544811273
 name="WindowsServer2019"
-connectto="localhost:2222"
+connectto="localhost:2201"
 deviceid=-1
 emulationid=-1
 deviceopts="-"
