@@ -1,0 +1,183 @@
+ZOC7.22.0 // PROGRAMSETTINGS
+
+
+// TABS
+ShowTabsAlways=yes
+ColorfulTabs=30
+DoTabsKeyShortcuts=yes
+DoTabsRemoteRename=no
+TabRemoteNameMaxLength=48
+TabsKeyShortcutsMode=0
+TabsOnNewTabAction=0
+TabsCloseButtonMode=0
+
+// WINDOW
+WindowTitle="%ZOCORHOST% %OPTIONS%"
+WindowAllowRemoteTitle=yes
+WindowsDefaultFont="Consolas  7 X 15 (11.3 pt)"
+MacDefaultFont="Courier New  8 X 14 (10.5 pt)"
+CursorBlinkDelay=500
+Transparency=15
+MaxBorderInBgColor=no
+MaxBorderBgColor=8
+WindowExtraPixelBorder=3
+HideOnDial=no
+CDToFront=no
+HideOnTransfer=no
+EndXferToFront=no
+
+// CLIPBOARD
+ClipAutoCopy=yes
+ClipClearMarkAfterCopy=no
+ClipTrimBlockMark=no
+ClipNoCopyScreenWithCmdC=no
+ClipNoNotifyCopy=no
+ClipQuick=no
+ClipCopyPasteCtrlCV=no
+ClipCopyPasteCtrlShiftCV=yes
+ClipInvertMarkModes=no
+
+// SCROLLBACK
+ScrollbackLines=10000
+ScrollbackReset=no
+ScrollbackNoDim=no
+ScrollbackIncludeAltScreens=no
+ScrollbackUpDownExits=no
+
+// MOUSE
+MouseModeLeft=0
+MouseModeMiddle=0
+MouseModeRight=2
+MouseWheelAction=1
+MouseWheelSpeed=2
+MouseMarkDelimiters="$ ;,:?()!=+'"|[]{}<>`´"
+
+// PRINTER
+Printer="Standarddrucker|STD|*"
+PrinterOrientation=no
+PrintRaw=no
+PrintJobMerging=5
+PrintHeader="%USERNAME%|%DATE% %TIME%|Seite %PAGE%"
+PrinterFont="10F.Courier New"
+PrinterMargins="mm|15|20|0|20"
+PrinterRawPrefix=""
+PrinterRawPostfix=""
+PrinterSpoolPostProcessor=""
+
+// FOLDERS
+DownloadPath="%USERPROFILE%"
+DownloadAltPath="%USERDESKTOP%"
+UploadPath="%USERPROFILE%"
+UploadAscPath="%USERPROFILE%"
+CapturePath="%ZOCFILES%\Log"
+ScriptPath="%ZOCFILES%"
+OptsPath="%ZOCFILES%\Options"
+SshPath="%ZOCFILES%\ssh"
+
+// SPECIAL FILES
+EditorExe="<DEFAULT>"
+ShellExe="C:\Windows\system32\cmd.exe"
+CallingLogFile="Calls.log"
+SaveScrFile="SaveScreen.log"
+ScrollEditFile="scrolledit^8.txt"
+RexxEvent=""
+RexxTransfer=""
+
+// SOUNDS
+SoundEotWav=""
+SoundBellWav="sndbell.wav"
+SoundConnectWav=""
+SoundDisconnectWav=""
+BeepMode=yes
+BeepMax=5
+BeepTime=5
+
+// CONFIRMATIONS
+NoQuitWhenOnline=no
+NoQuitWhenRexx=yes
+SafWarnRTS=yes
+SafWarnNoRTS=no
+SafWarnNoComPort=yes
+SafAskClrCapt=no
+SafAskQuit=no
+SafAskHangup=yes
+SafAskPhbkDel=yes
+SafAskHostdirPasswordReused=yes
+
+// PASSWORD
+Password=""
+ProtectOpts=no
+ProtectEditPhoneBk=no
+ProtectProgram=no
+ProtectProgramIdleTime=0
+PasswordStoreExpireMode=2
+PasswordStoreExpireDays=7
+
+// QUICKCONNECT
+QuickConnectHistoryMax=8
+NoQuickConnectPreselect=no
+
+// AUTO CONNECT
+DialMacros#00=""
+DialMacros#01=""
+DialMacros#02=""
+DialMacros#03=""
+DialMacros#04=""
+DialRetryWait=30
+DialMinWait=5
+DialTimeout=60
+DialMaxRetry=10
+SmallDialWin=no
+MdmConnectStr="CONNECT|CARRIER"
+MdmCancelStr="NO DIALTONE|NO MORE DIALLING|ERROR:"
+MdmDropStr="NO ANSWER|FAIL:"
+MdmBusyStr="BUSY|NO CARRIER|BLACKLISTED|DELAYED"
+
+// DISCONNECT
+DisconClearScreen=no
+DisconReloadStdOpts=no
+DisconShowPhoneBook=no
+DisconAutoNext=no
+DisconCloseTab=no
+DisconCloseWin=no
+DisconEnterReconnects=no
+
+// SUBSYS
+SubsysEmuVT=yes
+SubsysEmuIBM=yes
+SubsysEmuMisc=yes
+SubsysDevNetwork=yes
+SubsysDevModem=yes
+SubsysDevMisc=yes
+SubsysGui3270=no
+
+// MISCELLANEOUS
+AutoOptsSave=no
+NoRexxRememberPath=no
+StatusCursorOneBased=no
+BrWinFont="Consolas  7 X 15 (11.3 pt)"
+BrBufSize=64
+
+// UPDATES
+UpdateCheckDays=30
+
+// INTERNAL, OBSCURE OR BACKWARD COMPATIBILITY
+BookSections#00="Standard"
+BookSections#01="Abschnitt 1"
+BookSections#02="Abschnitt 2"
+BookSections#03="Abschnitt 3"
+BookSections#04="Abschnitt 4"
+BookSections#05="Abschnitt 5"
+ClipPasteAddFinalCR=no
+ClipTrimLast=no
+CursorBlinkDelay=500
+NoRexxAbortsRexx=no
+NoResetAfterRexx=no
+PasteEnableQuotedPasting=no
+PasteDoQuoteIndent=no
+PasteDoQuoteSmart=yes
+PasteQuoteWidth=77
+LocalTypingFont=""
+PrinterFontsize=10
+ShowUseButtonInSessionProfile=no
+

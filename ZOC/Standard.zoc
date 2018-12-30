@@ -23,12 +23,12 @@ CursorBlink=1
 
 // SESSION PROFILE: LAYOUT
 Dynamic=2
-WinWidth=188
-WinHeight=46
+WinWidth=230
+WinHeight=57
 BoldFont=no
 AntiAliasing=0
 CodePage=1252
-WinFont="Consolas  8 X 16"
+WinFont="Lucida Console  8 X 14"
 KbdCodePage=1000
 
 // SESSION PROFILE: COLOR

@@ -5,3 +5,5 @@ Kite
 
 PowerShell
 AutoHotkey
+REXX
+Mediawiker
