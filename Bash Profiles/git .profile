@@ -47,3 +47,4 @@ export PS1="\[$red\]\u\[$orange\]@\[$yellow\]\H \[$green\]\w \[$cyan\]\$(date +%
 
 alias l="ls -laF"
 alias ..="cd .."
+alias ags='for i in */; do echo -------$i---------;cd "$i"; git status; cd ..; done'
