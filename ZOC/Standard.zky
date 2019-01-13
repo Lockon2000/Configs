@@ -4,4 +4,6 @@ ZOC7.22.0 // KEYBOARD
 //        With-Shift(0x08), Any-NumLock-State(0x04), With-ScrollLock-On(0x02), With-NumLock-On(0x01) 
 //        (e.g flag for a key with Ctrl and Shift, regardless of ScrollLock and NumLock =>  
 //        0x10 + 0x08 + 0x40 + 0x04 => flag (hex)5C )
-13|74|0|0|0|0|^RUN=%ZOCFILES%\REXX\ImSelbenPfadNeuVerbinden.zrx
+13|74|0|0|0|0|^MENU=Wieder verbinden
+14|74|0|0|0|0|^MENU=Neues Registerblatt
+25|74|0|0|0|0|^RUN=%ZOCFILES%\REXX\ImSelbenPfadNeuVerbinden.zrx

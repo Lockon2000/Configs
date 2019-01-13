@@ -13,3 +13,5 @@ function Prompt {
                 -Color Red,           DarkCyan, Yellow,                  Green,                                                                Cyan
     "PS> "
 }
+
+Set-PSReadLineOption -EditMode Emacs

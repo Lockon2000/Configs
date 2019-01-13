@@ -12,7 +12,7 @@ TabsOnNewTabAction=0
 TabsCloseButtonMode=0
 
 // WINDOW
-WindowTitle="%ZOCORHOST% %OPTIONS%"
+WindowTitle="%ZOCORHOST% %OPTIONS% %CUSTOMTITLE%"
 WindowAllowRemoteTitle=yes
 WindowsDefaultFont="Consolas  7 X 15 (11.3 pt)"
 MacDefaultFont="Courier New  8 X 14 (10.5 pt)"
@@ -38,7 +38,7 @@ ClipCopyPasteCtrlShiftCV=yes
 ClipInvertMarkModes=no
 
 // SCROLLBACK
-ScrollbackLines=10000
+ScrollbackLines=20000
 ScrollbackReset=no
 ScrollbackNoDim=no
 ScrollbackIncludeAltScreens=no
