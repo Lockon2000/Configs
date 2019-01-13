@@ -4,6 +4,7 @@
 # Functionality
 - SideBarEnhancements (With Modified Settings)
 - ColorPicker
+- AppendSemiColon
 
 # Autocompletion
 - Kite
