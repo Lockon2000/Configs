@@ -2,9 +2,9 @@
 - Agile
 
 # Functionality
-- SideBarEnhancements (With Modified Settings)
+- SideBarEnhancements   (With Modifications preseint in "Side Bar.sublime-settings")
 - ColorPicker
-- AppendSemiColon
+- AppendSemiColon       (With Modifications present in "Key Bindings.md")
 
 # Autocompletion
 - Kite
@@ -15,3 +15,5 @@
 - AutoHotkey
 - REXX
 - Mediawiker
+- TypeScript
+- SASS
