@@ -3,11 +3,9 @@
 
 # Functionality
 - SideBarEnhancements   (With Modifications preseint in "Side Bar.sublime-settings")
-- ColorPicker
-- AppendSemiColon       (With Modifications present in "Key Bindings.md")
+- AppendSemiColon       (With Modifications present in "Default (Windows).sublime-keymap")
 
 # Autocompletion
-- Kite
 - AutoFileName
 
 # Syntax Highlighting
