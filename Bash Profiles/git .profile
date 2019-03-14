@@ -16,13 +16,6 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# Enable tab completion
-. ~/bash-scripts/git-completion.bash
-# Adds git prompt functionality
-. ~/bash-scripts/git-prompt.sh
-
-export GIT_PS1_SHOWDIRTYSTATE=1
-
 # colors
 red="\e[0;1;31m"
 orange="\e[0;38;5;172m"
@@ -33,9 +26,21 @@ magenta="\e[0;1;35m"
 white="\e[0;97m"
 reset="\e[0m"
 
+# aliases
+alias l="ls -laFh"
+alias ..="cd .."
+alias ags='for i in */; do echo -------$i---------;cd "$i"; git remote update; git status; cd ..; done'
+
 # HAS CAUSED ISSUES, SO WILL BE DISABLED FOR THE TIME BEING
 # reset the colors after my command
 # trap 'echo -n -e "$reset"' DEBUG
+
+# Enable tab completion
+. ~/bash-scripts/git-completion.bash
+# Adds git prompt functionality
+. ~/bash-scripts/git-prompt.sh
+
+export GIT_PS1_SHOWDIRTYSTATE=1
 
 # '\u' adds the name of the current user to the prompt
 # '\H' adds the full hostname to the prompt
@@ -44,7 +49,3 @@ reset="\e[0m"
 # '\$(__git_ps1)' git status prompt (generates a space before it even if empty)
 export PS1="\[$red\]\u\[$orange\]@\[$yellow\]\H \[$green\]\w \[$cyan\]\$(date +%d.%m.%Y) \A \[$magenta\]\$(__git_ps1)
 \[$reset\]$ "
-
-alias l="ls -laF"
-alias ..="cd .."
-alias ags='for i in */; do echo -------$i---------;cd "$i"; git remote update; git status; cd ..; done'

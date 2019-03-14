@@ -6,4 +6,5 @@ ZOC7.22.0 // KEYBOARD
 //        0x10 + 0x08 + 0x40 + 0x04 => flag (hex)5C )
 13|74|0|0|0|0|^MENU=Wieder verbinden
 14|74|0|0|0|0|^MENU=Neues Registerblatt
+20|74|0|0|0|0|^MENU=Adressbuch
 25|74|0|0|0|0|^RUN=%ZOCFILES%\REXX\ImSelbenPfadNeuVerbinden.zrx

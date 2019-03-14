@@ -26,6 +26,11 @@ magenta="\e[0;1;35m"
 white="\e[0;97m"
 reset="\e[0m"
 
+# aliases
+alias l="ls -laFh"
+alias ..="cd .."
+alias ags='for i in */; do echo -------$i---------;cd "$i"; git remote update; git status; cd ..; done'
+
 # HAS CAUSED ISSUES, SO WILL BE DISABLED FOR THE TIME BEING
 # reset the colors after my command
 # trap 'echo -n -e "$reset"' DEBUG
@@ -36,7 +41,3 @@ reset="\e[0m"
 # '\$(date +%d.%m.%Y) \A' adds the date and time in the Format DD.MM.YYYY HH:MM
 export PS1="\[$red\]\u\[$orange\]@\[$yellow\]\H \[$green\]\w \[$cyan\]\$(date +%d.%m.%Y) \A
 \[$reset\]$ "
-
-alias l="ls -laF"
-alias ..="cd .."
-alias ags='for i in */; do echo -------$i---------;cd "$i"; git status; cd ..; done'

@@ -1,6 +1,6 @@
 ZOC7.22.0 // HOST DIRECTORY D:\ZOC7 Dateien\Options\HostDirectory.zocini
 
-# LAST WRITTEN 2018-12-28 22:22:35
+# LAST WRITTEN 2019-02-17 18:35:05
 
 [STRUCTURE]
 
@@ -36,7 +36,7 @@ qaccess=no
 icon=7
 username="vagrant"
 password=""
-authfile="D:\VMs\UbuntuCosmic64\.vagrant\machines\default\virtualbox\private_key"
+authfile="D:\VMs\Vagrant Files\UbuntuCosmic64\.vagrant\machines\default\virtualbox\private_key"
 authglobal=no
 script=""
 scriptparm=""
