@@ -6,7 +6,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; +----------------------------------------------------------------------+
 ; | ** Daily Hotkeys **                                                  |
-; | F4: Hotkey to suspend the script                                     |
+; | F4: Hotkey to suspend all hotkeys                                    |
 ; | Ctrl+Alt+W: Pin the active window on top of any other window         |
 ; | Ctrl+Alt+C: Add to the Clipboard                                     |
 ; | Ctrl+Alt+N: Create a new file and run it with the associated program |
@@ -35,8 +35,7 @@ F4:: Suspend
     Send, ^c
     ClipWait, 0.5
 
-    if ErrorLevel
-    {
+    if ErrorLevel {
         MsgBox, The attempt to copy text onto the Clipboard failed.
         Clipboard := previousClipboard
         
@@ -128,8 +127,7 @@ F4:: Suspend
     StringSplit, PathArray, FullPath, `n
     
     ; Find line with backslash which is the path
-    Loop, %PathArray0%
-    {
+    Loop, %PathArray0% {
         StringGetPos, pos, PathArray%a_index%, \
         if (pos > 0) {
             FullPath:= PathArray%a_index%
@@ -243,8 +241,7 @@ F4:: Suspend
     Send, ^c        ; Populate the clipboard with the focused files name
     ClipWait, 0.5   ; Wait up to 0.5 seconds for the clipboard to have content
 
-    if ErrorLevel
-    {
+    if ErrorLevel {
         MsgBox, The attempt to copy text onto the Clipboard failed.
         Clipboard := temp
         
@@ -253,8 +250,7 @@ F4:: Suspend
 
     argument =       ; Epmty argument so it doesn't accumulate names over multiple uses
     files := StrSplit(Clipboard, "`r`n")
-    for index, element in files
-    {
+    for index, element in files {
         argument := argument """" element """" A_Space
     }
 

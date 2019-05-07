@@ -1,4 +1,4 @@
-Import-Module LockLib 3>$null
+Import-Module LockLib
 
 
 New-Alias -Name sublime     -Value "C:\Program Files\Sublime Text 3\sublime_text.exe"
