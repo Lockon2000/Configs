@@ -18,17 +18,18 @@ Here I list all correspondences I have found out till now:
 
 ```
 [
-    // Ctrl + Alt + b --> Cancel Build
+    // Open Folder
+    { "keys": ["ctrl+shift+o"], "command": "prompt_open_folder"},
+    // Cancel Build
     { "keys": ["ctrl+alt+b"], "command": "cancel_build" },
-    // Alt + Space --> Go to end of line
+    // Go to end of line
     { "keys": ["alt+space"], "command": "move_to", "args": {"to": "eol", "extend": false} },
-    // Alt + Shift + Space --> Go to beginnig of line
+    // Go to beginnig of line
     { "keys": ["alt+shift+space"], "command": "move_to", "args": {"to": "bol", "extend": false} },
 
     // Switching between tabs according to their order
     { "keys": ["ctrl+tab"], "command": "next_view" },
     { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
-
     // Switching between tabs according to their usage
     { "keys": ["ctrl+pagedown"], "command": "next_view_in_stack" },
     { "keys": ["ctrl+pageup"], "command": "prev_view_in_stack" },

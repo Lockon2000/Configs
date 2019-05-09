@@ -1,0 +1,7 @@
+{
+	"extensions":
+	[
+		"wsgi"
+	],
+    "rulers": [120]
+}
