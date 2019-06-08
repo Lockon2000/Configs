@@ -2,8 +2,8 @@
 - Agile
 
 # Functionality
-- SideBarEnhancements   (With Modifications preseint in "Side Bar.sublime-settings")
-- AppendSemiColon       (With Modifications present in "Default (Windows).sublime-keymap")
+- SideBarEnhancements   (With Modifications present in "Side Bar.sublime-settings")
+- AppendSemiColon       (With Modifications present in "Key Bindings.md")
 
 # Autocompletion
 - AutoFileName
