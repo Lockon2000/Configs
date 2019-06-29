@@ -29,7 +29,6 @@ reset="\e[0m"
 # aliases
 alias l="ls -laFh"
 alias ..="cd .."
-alias ags='for i in */; do echo -------$i---------;cd "$i"; git remote update; git status; cd ..; done'
 
 # HAS CAUSED ISSUES, SO WILL BE DISABLED FOR THE TIME BEING
 # reset the colors after my command
