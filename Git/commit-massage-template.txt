@@ -9,7 +9,19 @@
 # (Optional) Provide links or keys to any relevant tickets, articles or other resources
 # Example: Github issue #23
 #
-# --- COMMIT END ---
+# --------------------
+# Example Structure:
+# <Title>
+#
+# (Paragraphs describing changes and decisions)
+#
+# Changelog:
+#  - <change>
+#  - <change>
+#
+# <Platform> issue/s #<issue-number>, #<issue-number>
+#
+# --------------------
 # Label can be 
 #    feat     (new feature)
 #    fix      (bug fix)
