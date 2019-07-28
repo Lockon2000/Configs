@@ -16,10 +16,10 @@
 # (Paragraphs describing changes and decisions)
 #
 # Changelog:
-#  - <change>
-#  - <change>
+#  - <Change>
+#  - <Change>
 #
-# <Platform> issue/s #<issue-number>, #<issue-number>
+# <Platform> Issue/s #<issue-number>, #<issue-number>
 #
 # --------------------
 # Label can be 
