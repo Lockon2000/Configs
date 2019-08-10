@@ -9,3 +9,5 @@
     cm = commit
     st = status
     unstage = reset HEAD -
+[commit]
+    template = <home>/commit-message-template.txt
