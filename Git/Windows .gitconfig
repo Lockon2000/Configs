@@ -1,5 +1,6 @@
 [core]
     autocrlf = input
+    editor = 'c:/program files/sublime text 3/sublime_text.exe' -w
 [user]
     name = Mohamed Abdelwahab
     email = m.taha2000@outlook.de
