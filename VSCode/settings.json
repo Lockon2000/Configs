@@ -1,6 +1,36 @@
 {
-    // Use the splitted editor when modifying the settings in JSON
-    // The splitted editor shows the default settings and gives a lot of hints
-    // This makes configuring the settings in vscode just like in sublime text
+    // Use the splitted editor when modifying the settings in JSON.
+    // The splitted editor shows the default settings and gives a lot of hints.
+    // This makes configuring the settings in vscode just like in sublime text.
     "workbench.settings.useSplitJSON": true,
+
+    // Specifies the default line ending for new files.
+    "files.eol": "\n",      // UNIX Style
+    
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    // Language specific configurations
+    "[python]": {
+        "editor.rulers": [
+            120
+        ]
+    },
+
+    "[javascript]": {
+        "editor.rulers": [
+            120
+        ]
+    },
+
+    "[shellscript]": {
+        "editor.rulers": [
+            120
+        ]
+    },
+
+    "[css]": {
+        "editor.rulers": [
+            80
+        ]
+    },
 }
