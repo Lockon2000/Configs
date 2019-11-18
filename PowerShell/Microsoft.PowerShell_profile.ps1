@@ -9,8 +9,8 @@ New-Alias -Name fullhistory -Value (Get-PSReadLineOption).HistorySavePath
 
 
 function Prompt {
-    Write-Color -Text  $env:username, "@",      ($env:computername+" "), ($ExecutionContext.SessionState.Path.CurrentLocation.ToString()+" "), ((Get-Date -Format g)+"`n") `
-                -Color Red,           DarkCyan, Yellow,                  Green,                                                                Cyan
+    Write-Color -Text  $([Environment]::UserName), "@",      ($env:ComputerName+" "), ($ExecutionContext.SessionState.Path.CurrentLocation.ToString()+" "), ((Get-Date -Format g)+"`n") `
+                -Color Red,                        DarkCyan, Yellow,                  Green,                                                                Cyan
     "PS> "
 }
 

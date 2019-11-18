@@ -1,1 +1,1 @@
-user_pref("mousewheel.min_line_scroll_amount", 35);
+user_pref("mousewheel.min_line_scroll_amount", 45);
