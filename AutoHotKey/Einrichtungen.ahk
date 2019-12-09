@@ -4,20 +4,21 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; ---------------------------------------------------------------------
 
-; +----------------------------------------------------------------------+
-; | ** Daily Hotkeys **                                                  |
-; | F4: Hotkey to suspend all hotkeys                                    |
-; | Ctrl+Alt+W: Pin the active window on top of any other window         |
-; | Ctrl+Alt+C: Add to the Clipboard                                     |
-; | Ctrl+Alt+N: Create a new file and run it with the associated program |
-; | Ctrl+Alt+P: Launch PowerShell in Admin mode (disabled)               |
-; | Ctrl+Alt+S: Launch Sublime Text                                      |
-; | Ctrl+Shift+S: Open Clipboard with Sublime Text                       |
-; |----------------------------------------------------------------------|
-; | ** Debungging Hotkeys **                                             |
-; | Ctrl+Alt+1                                                           |
-; | Ctrl+Alt+2                                                           |
-; +----------------------------------------------------------------------+
+; +------------------------------------------------------------------------------+
+; | ** Daily Hotkeys **                                                          |
+; | F4: Hotkey to suspend all hotkeys                                            |
+; | LeftCtrl+LeftAlt+W: Pin the active window on top of any other window         |
+; | LeftCtrl+LeftAlt+C: Add to the Clipboard                                     |
+; | LeftCtrl+LeftAlt+P: Launch PowerShell in Admin mode (disabled)               |
+; | LeftCtrl+LeftAlt+S: Launch Sublime Text                                      |
+; | LeftCtrl+LeftAlt+N: Create a new file and run it with the associated program |
+; | Ctrl+Shift+S: Open Clipboard with Sublime Text                               |
+; |------------------------------------------------------------------------------|
+; | ** Debungging Hotkeys **                                                     |
+; | Ctrl+Alt+1                                                                   |
+; | Ctrl+Alt+2                                                                   |
+; | Ctrl+Alt+3                                                                   |
+; +------------------------------------------------------------------------------+
 
 
 ; Hotkey to suspend the script
@@ -25,11 +26,11 @@ F4:: Suspend
 
 
 ; Ctrl+Alt+W: Pin the active window on top of any other window
-^!w:: Winset, Alwaysontop, TOGGLE, A
+<^<!w:: Winset, Alwaysontop, TOGGLE, A
 
 
 ; Ctrl+Alt+C: Add to the Clipboard
-^!c::
+<^<!c::
     previousClipboard := Clipboard
     Clipboard =
     Send, ^c
@@ -50,9 +51,9 @@ F4:: Suspend
 ; ; Ctrl+Alt+P: Hotkey to launch PowerShell in Admin mode - Disabled as of now I am using windows Builtin Shortcut
 ; ; If an Explorer Window is active
 ; #IfWinActive ahk_class CabinetWClass
-; ^!p::
+; <^<!p::
 ; #IfWinActive ahk_class ExploreWClass
-; ^!p::
+; <^<!p::
 ;     ; Begin (get current path) -------------
 ;     ; Get full path from open Explorer window
 ;     WinGetText, FullPath, A
@@ -89,9 +90,9 @@ F4:: Suspend
 
 ; ; If the Desktop is active
 ; #IfWinActive ahk_class Progman
-; ^!p::
+; <^<!p::
 ; #IfWinActive ahk_class WorkerW
-; ^!p::
+; <^<!p::
 ;     ; Open the file in the appropriate editor
 ;     Run *RunAs C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe -NoExit -Command "Set-Location 'C:\Users\%A_UserName%\Desktop'"
 
@@ -99,7 +100,7 @@ F4:: Suspend
 
 ; ; If anything else is active and also turn off context sensitivity
 ; #IfWinActive
-; ^!p::
+; <^<!p::
 ;     ; Open the file in the appropriate editor
 ;     Run *RunAs C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe
 
@@ -107,18 +108,18 @@ F4:: Suspend
 
 
 ; Ctrl+Alt+S: Launch Sublime Text
-^!s:: Run, "C:\Program Files\Sublime Text 3\sublime_text.exe"
+<^<!s:: Run, "C:\Program Files\Sublime Text 3\sublime_text.exe"
 
 
 ; Ctrl+Alt+N: Create a new file and run it with the associated program
 ; Only create when Windows Explorer or Desktop is active
-; Options:
+; Options: (Add them at the end of the name after a space in the text box)
 ; -s    to open the created file with sublime text regardless of its associated program
 ; -c    to just create a file without interacting with it any further
 #IfWinActive ahk_class CabinetWClass
-^!n::
+<^<!n::
 #IfWinActive ahk_class ExploreWClass
-^!n::
+<^<!n::
     ; Begin (get current path) -------------
     ; Get full path from open Explorer window
     WinGetText, FullPath, A
@@ -180,9 +181,9 @@ F4:: Suspend
     Return
 
 #IfWinActive ahk_class Progman
-^!n::
+<^<!n::
 #IfWinActive ahk_class WorkerW
-^!n::
+<^<!n::
     ; Change working directory
     SetWorkingDir, C:\Users\%A_UserName%\Desktop
 
@@ -267,12 +268,13 @@ F4:: Suspend
 ; Tools for developing
 ; Only uncomment when needed
 
-; ^!r::Reload  ; Assign Ctrl-Alt-R as a hotkey to restart the script.
 
-; ^!1::
-
-
-; ^!2::
+; <^<!r::Reload  ; Assign Ctrl-Alt-R as a hotkey to restart the script.
 
 
-; ^!3::
+; <^<!1::MsgBox You pressed LeftControl+LeftAlt+1.
+
+; <^<!2::
+
+; <^<!3::
+
