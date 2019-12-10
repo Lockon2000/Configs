@@ -7,8 +7,6 @@ cp /vagrant/configfiles/.vimrc /home/vagrant
 # Configuring system parameters
 echo "############### Configuring Timezone ###############################################"
 timedatectl set-timezone  Europe/Berlin
-echo "############### Configuring Hostname ###############################################"
-hostnamectl set-hostname Node1
 
 # Configuring ssh service
 echo "############### Configuring PasswordAuthentication for ssh ###############################################"
@@ -26,7 +24,4 @@ echo "############### Installing aptitude ######################################
 apt-get install -y aptitude
 echo "############### Installing python3-pip ###############################################"
 aptitude install -y python3-pip
-# Install Apache2 and neccessary mods
-echo "############### Installing apache2 libapache2-mod-wsgi-py3 ###############################################"
-aptitude install -y apache2 libapache2-mod-wsgi-py3
 

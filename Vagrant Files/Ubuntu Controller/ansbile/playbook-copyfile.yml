@@ -1,0 +1,8 @@
+- name: Play 1
+  hosts: all
+  tasks:
+    - name: copy file
+      copy:
+        src: /home/vagrant/.profile
+        dest: /tmp/.profile
+

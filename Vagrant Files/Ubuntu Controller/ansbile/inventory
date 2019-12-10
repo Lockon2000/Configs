@@ -1,0 +1,5 @@
+[nodes]
+node1       ansible_host=192.168.50.11 ansible_connection=ssh ansible_user=vagrant ansible_ssh_pass=vagrant
+node2       ansible_host=192.168.50.12 ansible_connection=ssh ansible_user=vagrant ansible_ssh_pass=vagrant
+webserver1  ansible_host=192.168.50.21 ansible_connection=ssh ansible_user=vagrant ansible_ssh_pass=vagrant
+

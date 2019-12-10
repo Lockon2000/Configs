@@ -7,8 +7,6 @@ cp /vagrant/configfiles/.vimrc /home/vagrant
 # Configuring system parameters
 echo "############### Configuring Timezone ###############################################"
 timedatectl set-timezone  Europe/Berlin
-echo "############### Configuring Hostname ###############################################"
-hostnamectl set-hostname Webserver
 
 # Configuring ssh service
 echo "############### Configuring PasswordAuthentication for ssh ###############################################"
