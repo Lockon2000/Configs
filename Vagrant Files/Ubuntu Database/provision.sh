@@ -24,7 +24,7 @@ echo "############### Installing aptitude ######################################
 apt-get install -y aptitude
 echo "############### Installing python3-pip ###############################################"
 aptitude install -y python3-pip
-# Install Apache2 and neccessary mods
-echo "############### Installing apache2 libapache2-mod-wsgi-py3 ###############################################"
+# Install postgresql
+echo "############### Installing postgresql ###############################################"
 aptitude install -y postgresql
 
