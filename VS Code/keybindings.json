@@ -1,0 +1,17 @@
+[
+    {
+        "key": "alt+e",
+        "command": "cursorLineEnd",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+s",
+        "command": "cursorLineStart",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "enter",
+        "command": "-acceptSelectedSuggestion",
+        "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+    }
+]

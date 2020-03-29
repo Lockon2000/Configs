@@ -9,6 +9,10 @@
     
     "diffEditor.ignoreTrimWhitespace": false,
 
+    // Insert spaces when pressing Tab. This setting is overriden
+    // based on the file contents when `editor.detectIndentation` is true.
+    "editor.insertSpaces": true,
+
     // Language specific configurations
     "[python]": {
         "editor.rulers": [
@@ -28,9 +32,26 @@
         ]
     },
 
+    "[html]": {
+        // The number of spaces a tab is equal to. This setting is overridden
+        // based on the file contents when `editor.detectIndentation` is true.
+        "editor.tabSize": 2,
+    },
+
     "[css]": {
         "editor.rulers": [
             80
-        ]
+        ],
+        "editor.tabSize": 2,
     },
+
+    "[scss]": {
+        "editor.rulers": [
+            80
+        ],
+        "editor.tabSize": 2,
+    },
+
+    "window.restoreWindows": "none",
+    "files.hotExit": "off",
 }

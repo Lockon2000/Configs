@@ -5,7 +5,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; ---------------------------------------------------------------------
 
 ; +------------------------------------------------------------------------------+
-; | ** Daily Hotkeys **                                                          |
+; | ** Defined Hotkeys **                                                        |
 ; | F4: Hotkey to suspend all hotkeys                                            |
 ; | LeftCtrl+LeftAlt+W: Pin the active window on top of any other window         |
 ; | LeftCtrl+LeftAlt+C: Add to the Clipboard                                     |
@@ -14,7 +14,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; | LeftCtrl+LeftAlt+N: Create a new file and run it with the associated program |
 ; | Ctrl+Shift+S: Open Clipboard with Sublime Text                               |
 ; |------------------------------------------------------------------------------|
-; | ** Debungging Hotkeys **                                                     |
+; | ** Debugging Hotkeys **                                                      |
 ; | Ctrl+Alt+1                                                                   |
 ; | Ctrl+Alt+2                                                                   |
 ; | Ctrl+Alt+3                                                                   |
