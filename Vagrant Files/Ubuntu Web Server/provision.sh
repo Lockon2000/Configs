@@ -1,6 +1,6 @@
 # Setting up my enviroment
 echo "############### Copying all config files to ~ ###############################################"
-cp -r /vagrant/configfiles/* /home/vagrant
+cp -rT /vagrant/configfiles /home/vagrant
 
 # Configuring system parameters
 echo "############### Configuring Timezone ###############################################"
@@ -30,5 +30,5 @@ echo "############### Installing Node.js and npm from NodeSource PPA ###########
 cd /tmp
 curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
 bash nodesource_setup.sh
-aptitude install nodejs
+aptitude install -y nodejs
 

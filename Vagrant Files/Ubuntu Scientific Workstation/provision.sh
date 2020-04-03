@@ -1,8 +1,8 @@
 # Setting up my enviroment
 echo "############### Copying profiles and needed scripts to root home ###############################################"
-cp -r /vagrant/configfiles/* /root
+cp -rT /vagrant/configfiles /root
 echo "############### Copying profiles and needed scripts to vagrant home ###############################################"
-cp -r /vagrant/configfiles/* /home/vagrant
+cp -rT /vagrant/configfiles /home/vagrant
 
 # Configuring system parameters
 echo "############### Configuring Timezone ###############################################"

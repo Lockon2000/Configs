@@ -15,10 +15,10 @@ Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/bionic64"
 
   # Define the Vagrant name for the VM
-  config.vm.define "Webserver1"
+  config.vm.define "WebServer1"
 
   # Define the hostname inside the VM
-  config.vm.hostname = "Webserver1"
+  config.vm.hostname = "WebServer1"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -61,7 +61,7 @@ Vagrant.configure("2") do |config|
   #
   config.vm.provider "virtualbox" do |vb|
     # Define the name Virtualbox will use for the VM
-    vb.name = "Webserver1"
+    vb.name = "WebServer1"
 
     # Display the VirtualBox GUI when booting the machine
     # vb.gui = true

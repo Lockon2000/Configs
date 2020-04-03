@@ -1,6 +1,6 @@
 # Setting up my enviroment
 echo "############### Copying all config files to ~ ###############################################"
-cp -r /vagrant/configfiles/* /home/vagrant
+cp -rT /vagrant/configfiles /home/vagrant
 
 # Configuring system parameters
 echo "############### Configuring Timezone ###############################################"
