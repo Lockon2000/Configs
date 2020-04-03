@@ -1,0 +1,68 @@
+
+
+# --------------------------  50 chars mark  --->|  72 chars mark  --->|
+# Subject:
+#   The major change of in this commit
+#   e.g.: Implement automated commit messages
+#
+#   Remember to:
+#     * Must not excced 72 chars but is preferebly 50 chars
+#     * Must be capitalized
+#     * Use the imperative mood
+#     * should follow: (If applied, this commit will...) <subject>
+#     * Do not end it with a period
+#     * If several small changes are also present then a "i.a."
+#       should be appended
+#
+# Body:
+#   Explain why this change is being made in some paragraphs
+#   Provide a changelog
+#
+#   Remember to:
+#     * Separate subject from body with a blank line
+#     * Use the body to explain what and why vs. how
+#     * Can use multiple lines with "-" or "*" for bullet points in
+#       explanation and changelog
+#
+# Closing:
+#   Provide links or keys to any relevant tickets, articles or
+#   other resources
+#   e.g.: GitHub Issue: #23
+#   Provide tags
+#
+# --------------------
+# Commit Message General Structure:
+# <Subject> (mandatory)
+#
+# <Paragraphs describing changes and decisions> (optional)
+#
+# Changelog: (mandatory)
+#  - <Change>
+#  - <Change>
+#
+# <Platform> Issue/s: #<issue-number>, #<issue-number> (optional)
+# Articles: Title <link>, Title <link> (optional)
+# Tags: <tag>, <tag> (mandatory)
+#
+# --------------------
+# Tags can be 
+#    feature    (new feature)
+#    fix        (bug fix)
+#    refactor   (refactoring code)
+#    style      (formatting, missing semicolons, etc.; no logic or
+#                behavioral change)
+#    content    (adding or modifying product content, no code change)
+#    resources  (adding resources to the project)
+#    docs       (changes to documentation)
+#    tests      (adding or refactoring tests; no production code change)
+#    debugging  (changes in debugging code/frameworks; no production
+#                code change)
+#    version    (version bump/new release; no production code change)
+#    license    (edits regarding licensing; no production code change)
+#    hack       (temporary fix to make things move forward; please
+#                avoid it)
+#    WIP        (work In Progress; for intermediate commits to keep
+#                patches reasonably sized)
+#    defaults   (changes default options)
+#   
+# --------------------

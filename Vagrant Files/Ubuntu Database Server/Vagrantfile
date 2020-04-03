@@ -15,10 +15,10 @@ Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/bionic64"
 
   # Define the Vagrant name for the VM
-  config.vm.define "Webserver1"
+  config.vm.define "DatabaseServer1"
 
   # Define the hostname inside the VM
-  config.vm.hostname = "Webserver1"
+  config.vm.hostname = "DatabaseServer1"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -35,13 +35,13 @@ Vagrant.configure("2") do |config|
   # within the machine from a port on the host machine and only allow access
   # via 127.0.0.1 to disable public access
   config.vm.network "forwarded_port", guest: 22, host: 2222, host_ip: "127.0.0.1", id: "ssh", disabled: true
-  config.vm.network "forwarded_port", guest: 22, host: 2221, host_ip: "127.0.0.1"
-  config.vm.network "forwarded_port", guest: 80, host: 8021, host_ip: "127.0.0.1"
+  config.vm.network "forwarded_port", guest: 22, host: 2241, host_ip: "127.0.0.1"
+  config.vm.network "forwarded_port", guest: 80, host: 8041, host_ip: "127.0.0.1"
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
   # config.vm.network "private_network", ip: "192.168.33.10"
-  config.vm.network "private_network", ip: "192.168.50.21",
+  config.vm.network "private_network", ip: "192.168.50.41",
     virtualbox__intnet: "VagrantNetwork1"
 
   # Create a public network, which generally matched to bridged network.
@@ -61,7 +61,7 @@ Vagrant.configure("2") do |config|
   #
   config.vm.provider "virtualbox" do |vb|
     # Define the name Virtualbox will use for the VM
-    vb.name = "Webserver1"
+    vb.name = "DatabaseServer1"
 
     # Display the VirtualBox GUI when booting the machine
     # vb.gui = true

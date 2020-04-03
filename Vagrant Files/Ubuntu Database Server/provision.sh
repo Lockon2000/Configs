@@ -1,8 +1,6 @@
 # Setting up my enviroment
-echo "############### Copying my profile to ~ ###############################################"
-cp /vagrant/configfiles/.profile /home/vagrant
-echo "############### copying my .vimrc to ~ ###############################################"
-cp /vagrant/configfiles/.vimrc /home/vagrant
+echo "############### Copying all config files to ~ ###############################################"
+cp -r /vagrant/configfiles/* /home/vagrant
 
 # Configuring system parameters
 echo "############### Configuring Timezone ###############################################"

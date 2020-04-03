@@ -1,16 +1,8 @@
 # Setting up my enviroment
 echo "############### Copying profiles and needed scripts to root home ###############################################"
-cp /vagrant/configfiles/.profile /root
-cp -r /vagrant/configfiles/bash-scripts /root
-cp /vagrant/configfiles/.vimrc /root
-cp /vagrant/configfiles/.gitconfig /root
-cp /vagrant/configfiles/commit-message-template.txt /root
+cp -r /vagrant/configfiles/* /root
 echo "############### Copying profiles and needed scripts to vagrant home ###############################################"
-cp /vagrant/configfiles/.profile /home/vagrant
-cp -r /vagrant/configfiles/bash-scripts /home/vagrant
-cp /vagrant/configfiles/.vimrc /home/vagrant
-cp /vagrant/configfiles/.gitconfig /home/vagrant
-cp /vagrant/configfiles/commit-message-template.txt /home/vagrant
+cp -r /vagrant/configfiles/* /home/vagrant
 
 # Configuring system parameters
 echo "############### Configuring Timezone ###############################################"
