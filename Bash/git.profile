@@ -32,13 +32,8 @@ alias ..="cd .."
 alias ags='for i in */; do echo -------$i---------;cd "$i"; git remote update; git status; cd ..; done'
 
 # HAS CAUSED ISSUES, SO WILL BE DISABLED FOR THE TIME BEING
-# reset the colors after my command
+# # reset the colors after my command
 # trap 'echo -n -e "$reset"' DEBUG
-
-# Enable tab completion
-. ~/bash-scripts/git-completion.bash
-# Adds git prompt functionality
-. ~/bash-scripts/git-prompt.sh
 
 export GIT_PS1_SHOWDIRTYSTATE=1
 

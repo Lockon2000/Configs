@@ -1,1 +1,1 @@
-Don't forget to convert the Line Endings to Unix-Style before you copy them to a Unix-Like
+- Don't forget to convert the Line Endings to Unix-Style before you copy them to a Unix-Like system.

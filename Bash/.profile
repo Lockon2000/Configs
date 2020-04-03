@@ -31,7 +31,7 @@ alias l="ls -laFh"
 alias ..="cd .."
 
 # HAS CAUSED ISSUES, SO WILL BE DISABLED FOR THE TIME BEING
-# reset the colors after my command
+# # reset the colors after my command
 # trap 'echo -n -e "$reset"' DEBUG
 
 # '\u' adds the name of the current user to the prompt
@@ -40,3 +40,4 @@ alias ..="cd .."
 # '\$(date +%d.%m.%Y) \A' adds the date and time in the Format DD.MM.YYYY HH:MM
 export PS1="\[$red\]\u\[$orange\]@\[$yellow\]\H \[$green\]\w \[$cyan\]\$(date +%d.%m.%Y) \A
 \[$reset\]$ "
+
