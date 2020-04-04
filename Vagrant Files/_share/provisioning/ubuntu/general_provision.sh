@@ -1,6 +1,7 @@
-# Setting up my enviroment
-echo "############### Copying all config files to ~ ###############################################"
-cp -rT /vagrant/configfiles /home/vagrant
+# Setting up user enviroments
+echo "############### Copying all config files to ~ for root and vagrant ###############################################"
+cp -rT /vagrant_share/provisioning/ubuntu/files/home_files /root
+cp -rT /vagrant_share/provisioning/ubuntu/files/home_files /home/vagrant
 
 # Configuring system parameters
 echo "############### Configuring Timezone ###############################################"
@@ -17,9 +18,7 @@ apt-get update
 echo "############### Upgrading all packages non-interactivly ###############################################"
 DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confnew" dist-upgrade
 
-# Install all neded packages
+# Install aptitude
 echo "############### Installing aptitude ###############################################"
 apt-get install -y aptitude
-echo "############### Installing python3-pip ###############################################"
-aptitude install -y python3-pip
 
