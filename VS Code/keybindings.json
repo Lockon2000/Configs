@@ -1,17 +1,33 @@
+// Place your key bindings in this file to override the defaults
 [
     {
-        "key": "alt+e",
-        "command": "cursorLineEnd",
-        "when": "editorTextFocus"
+        "key": "alt+s",
+        "command": "cursorHome",
+        "when": "textInputFocus"
     },
     {
-        "key": "alt+s",
-        "command": "cursorLineStart",
-        "when": "editorTextFocus"
+        "key": "alt+shift+s",
+        "command": "cursorHomeSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+e",
+        "command": "cursorEnd",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+shift+e",
+        "command": "cursorEndSelect",
+        "when": "textInputFocus"
     },
     {
         "key": "enter",
         "command": "-acceptSelectedSuggestion",
         "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
     }
 ]

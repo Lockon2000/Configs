@@ -27,6 +27,10 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; +------------------------------------------------------------------------------+
 
 
+; Set Ending Characters for hotstrings to only space and new line
+#Hotstring EndChars  `n
+
+
 ::math-d::
 SendRaw, 
 (
