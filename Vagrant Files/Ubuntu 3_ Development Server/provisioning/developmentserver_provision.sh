@@ -1,6 +1,8 @@
-# Install all neded packages
+# Install all needed packages #
+
 echo "############### Installing python3-pip ###############################################"
 aptitude install -y python3-pip
+
 # Install Node.js and npm from NodeSource PPA
 echo "############### Installing Node.js and npm from NodeSource PPA ###############################################"
 curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
