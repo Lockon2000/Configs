@@ -4,12 +4,13 @@
 
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
+    // Make powershell the default profile
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
 
     // When closed and opened the windows is restored to its last position and size.
     "initialPosition": "1920, 0",
     "initialCols" : 140,
-    "initialRows": 48,
+    "initialRows": 46,
 
 
     "profiles":
@@ -21,7 +22,8 @@
             "commandline": "powershell.exe",
             "hidden": false,
             "useAcrylic": true,
-            "acrylicOpacity": 0.60
+            "acrylicOpacity": 0.60,
+            "startingDirectory": null
         },
         {
             // Make changes here to the cmd.exe profile
@@ -32,9 +34,9 @@
         },
         {
             "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-            "hidden": true,
             "name": "Azure Cloud Shell",
-            "source": "Windows.Terminal.Azure"
+            "source": "Windows.Terminal.Azure",
+            "hidden": true
         }
     ],
 
