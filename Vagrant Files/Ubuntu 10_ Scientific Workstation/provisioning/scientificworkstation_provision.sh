@@ -32,8 +32,8 @@ jupyter lab --generate-config
 sed -i "/#c.NotebookApp.ip = 'localhost'/c\c.NotebookApp.ip = '0.0.0.0'" /home/vagrant/.jupyter/jupyter_notebook_config.py
 # Don't open a browser on the server (no GUI installed)
 sed -i "/#c.NotebookApp.open_browser = True/c\c.NotebookApp.open_browser = False" /home/vagrant/.jupyter/jupyter_notebook_config.py
-# # Make the authentication token persistent
-# sed -i "/#c.NotebookApp.token = '<generated>'/c\c.NotebookApp.token = '23442db30a2e54e32c95f52691fe2acb57c13822c214a1d6'" /home/vagrant/.jupyter/jupyter_notebook_config.py
+# Turn off authentication token (To make the authentication token persistent, supply one. To make it generated keep the value '<generated>')
+sed -i "/#c.NotebookApp.token = '<generated>'/c\c.NotebookApp.token = ''" /home/vagrant/.jupyter/jupyter_notebook_config.py
 # Change the root directory
 sed -i "/#c.NotebookApp.notebook_dir = ''/c\c.NotebookApp.notebook_dir = '/home/vagrant/.jupyter/'" /home/vagrant/.jupyter/jupyter_notebook_config.py
 EOF

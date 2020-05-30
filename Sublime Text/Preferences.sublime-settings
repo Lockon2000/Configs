@@ -1,14 +1,15 @@
 {
-	"auto_complete_commit_on_tab": true,
-	"color_scheme": "Packages/Agila Theme/Agila Neon Monocyanide.tmTheme",
-	"font_size": 9,
-	"hot_exit": false,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"show_encoding": true,
-	"show_line_endings": true,
-	"theme": "Adaptive.sublime-theme",
-	"translate_tabs_to_spaces": true
+    "font_face": "Cascadia Code PL",
+    "auto_complete_commit_on_tab": true,
+    "color_scheme": "Packages/Agila Theme/Agila Neon Monocyanide.tmTheme",
+    "font_size": 9,
+    "hot_exit": false,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "show_encoding": true,
+    "show_line_endings": true,
+    "theme": "Adaptive.sublime-theme",
+    "translate_tabs_to_spaces": true
 }

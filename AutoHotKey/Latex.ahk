@@ -6,14 +6,17 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; +------------------------------------------------------------------------------+
 ; | ** Defined Hotkeys **
-; | math-d: 
-; | so-a: 
+; | md-e: 
 ; | alned-e: 
 ; | aln-e: 
 ; | aln*-e: 
 ; | pmat-e: 
 ; | vmat-e: 
 ; | smat-e: 
+; |
+; | and-a: 
+; | so-a: 
+; |
 ; | (): 
 ; | []: 
 ; | {}: 
@@ -31,18 +34,12 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #Hotstring EndChars  `n
 
 
-::math-d::
+::md-e::
 SendRaw, 
 (
 \[\]
 )
 Send, {left}{left}
-
-return
-
-
-::so-a::
-SendRaw, \quad \Rightarrow \quad
 
 return
 
@@ -110,6 +107,18 @@ return
 ::smat-e::
 SendRaw, \begin{smallmatrix}\end{smallmatrix}
 Send, {left 17}
+
+return
+
+
+::and-a::
+Send, , \qquad{Space}
+
+return
+
+
+::so-a::
+Send, \quad \Rightarrow \quad{Space}
 
 return
 
