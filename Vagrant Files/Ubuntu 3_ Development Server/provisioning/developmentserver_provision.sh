@@ -1,3 +1,13 @@
+# System Configurations #
+
+# Add vagrant to group www-data
+usermod -a -G www-data vagrant
+
+# Increase the amount of inotify watchers
+sed -i '$a\\nfs.inotify.max_user_watches=524288' /etc/sysctl.conf
+sysctl -p
+
+
 # Install all needed packages #
 
 # Install python utilities
@@ -13,7 +23,26 @@ aptitude install -y nodejs
 
 # Install php
 echo "############### Installing php ###############################################"
-aptitude install -y php 
+aptitude install -y software-properties-common
+add-apt-repository ppa:ondrej/php
+aptitude update
+aptitude install -y php
+
+# Install php utilities
+echo "############### Installing composer globally ###############################################"
+EXPECTED_CHECKSUM="$(wget -q -O - https://composer.github.io/installer.sig)"
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+ACTUAL_CHECKSUM="$(php -r "echo hash_file('sha384', 'composer-setup.php');")"
+if [ "$EXPECTED_CHECKSUM" != "$ACTUAL_CHECKSUM" ]
+then
+    >&2 echo 'ERROR: Invalid installer checksum'
+    rm composer-setup.php
+    exit 1
+fi
+php composer-setup.php --quiet --install-dir=/usr/bin --filename=composer
+RESULT=$?
+rm composer-setup.php
+exit $RESULT
 
 # Install Apache2 and neccessary mods
 echo "############### Installing apache2, libapache2-mod-wsgi-py3, libapache2-mod-php ###############################################"
@@ -24,7 +53,7 @@ echo "############### Installing mysql-server, php-mysql #######################
 aptitude install -y mysql-server php-mysql
 
 
-# Some Configurations #
+# Additional Configurations #
 
 # Make the websites directory and give the neccesary premisions
 mkdir /srv/web
@@ -33,7 +62,7 @@ chmod a+rwx /srv/web
 # Configure a basic website
 mkdir /srv/web/localhost
 chown vagrant:vagrant /srv/web/localhost
-cat << 'EOF' > /etc/apache/sites-available/localhost.conf
+cat <<'EOF' > /etc/apache/sites-available/localhost.conf
 <VirtualHost *:80>
     ServerName localhost
 
