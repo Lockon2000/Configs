@@ -40,13 +40,13 @@ then
     exit 1
 fi
 php composer-setup.php --quiet --install-dir=/usr/bin --filename=composer
-RESULT=$?
 rm composer-setup.php
-exit $RESULT
 
 # Install Apache2 and neccessary mods
 echo "############### Installing apache2, libapache2-mod-wsgi-py3, libapache2-mod-php ###############################################"
 aptitude install -y apache2 libapache2-mod-wsgi-py3 libapache2-mod-php
+sudo a2enmod rewrite
+chmod a+rx /var/log/apache2/
 
 # Install MySQL and php module
 echo "############### Installing mysql-server, php-mysql ###############################################"
@@ -56,13 +56,15 @@ aptitude install -y mysql-server php-mysql
 # Additional Configurations #
 
 # Make the websites directory and give the neccesary premisions
+echo "############### Make and configure /srv/web ###############################################"
 mkdir /srv/web
 chmod a+rwx /srv/web
 
 # Configure a basic website
+echo "############### Configure the localhost website ###############################################"
 mkdir /srv/web/localhost
 chown vagrant:vagrant /srv/web/localhost
-cat <<'EOF' > /etc/apache/sites-available/localhost.conf
+cat <<'EOF' > /etc/apache2/sites-available/localhost.conf
 <VirtualHost *:80>
     ServerName localhost
 
@@ -82,4 +84,5 @@ a2dissite 000-default.conf
 systemctl restart apache2
 
 # Configure the MySQL root user to use password authentication
+echo "############### Configure MySql root user password ###############################################"
 mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'vagrant'; FLUSH PRIVILEGES;"
