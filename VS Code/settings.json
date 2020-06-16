@@ -1,4 +1,6 @@
 {
+    "editor.fontFamily": "'Cascadia Code PL', Consolas, 'Courier New', monospace",
+    
     // Use the splitted editor when modifying the settings in JSON.
     // The splitted editor shows the default settings and gives a lot of hints.
     // This makes configuring the settings in vscode just like in sublime text.

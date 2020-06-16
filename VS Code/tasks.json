@@ -12,7 +12,7 @@
     {
       "label": "Watch & Compile SCSS Folder (Debugging)",
       "type": "shell",
-      "command": "sass --no-source-map --style=expanded --watch scss/:css/",
+      "command": "sass --style=expanded --watch scss/:css/",
       "group": "build"
     }
   ]
