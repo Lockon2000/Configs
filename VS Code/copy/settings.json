@@ -1,5 +1,6 @@
 {
     "editor.fontFamily": "'Cascadia Code PL', Consolas, 'Courier New', monospace",
+    "terminal.integrated.fontFamily": "'Cascadia Code PL', Consolas, 'Courier New', monospace",
     
     // Use the splitted editor when modifying the settings in JSON.
     // The splitted editor shows the default settings and gives a lot of hints.
@@ -28,6 +29,12 @@
         ]
     },
 
+    "[php]": {
+        "editor.rulers": [
+            120
+        ]
+    },
+
     "[shellscript]": {
         "editor.rulers": [
             120
@@ -49,7 +56,7 @@
 
     "[scss]": {
         "editor.rulers": [
-            80
+            120
         ],
         "editor.tabSize": 2,
     },
