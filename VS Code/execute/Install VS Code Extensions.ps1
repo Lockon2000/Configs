@@ -18,3 +18,5 @@ code --install-extension imperez.smarty # Smarty
 code --install-extension stylelint.vscode-stylelint # stylelint
 code --install-extension whatwedo.twig # Twig
 code --install-extension ms-vscode-remote.vscode-remote-extensionpack # Remote Development
+
+Pause
