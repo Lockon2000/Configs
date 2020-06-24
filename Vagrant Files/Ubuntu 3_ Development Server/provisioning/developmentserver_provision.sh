@@ -1,7 +1,8 @@
 # System Configurations #
 
-# Add vagrant to group www-data
+# Add vagrant to group www-data and the other way around
 usermod -a -G www-data vagrant
+usermod -a -G vagrant www-data
 
 # Increase the amount of inotify watchers
 sed -i '$a\\nfs.inotify.max_user_watches=524288' /etc/sysctl.conf
@@ -39,7 +40,7 @@ then
     rm composer-setup.php
     exit 1
 fi
-php composer-setup.php --quiet --install-dir=/usr/bin --filename=composer
+php composer-setup.php --quiet --install-dir=/usr/local/bin --filename=composer
 rm composer-setup.php
 
 # Install Apache2 and neccessary mods
