@@ -43,6 +43,11 @@ fi
 php composer-setup.php --quiet --install-dir=/usr/local/bin --filename=composer
 rm composer-setup.php
 
+# Install sass
+wget -O /tmp/sass.tar.gz https://github.com/sass/dart-sass/releases/download/1.26.9/dart-sass-1.26.9-linux-x64.tar.gz
+tar -zxvf /tmp/sass.tar.gz
+mv /tmp/dart-sass/* /usr/local/bin
+
 # Install Apache2 and neccessary mods
 echo "############### Installing apache2, libapache2-mod-wsgi-py3, libapache2-mod-php ###############################################"
 aptitude install -y apache2 libapache2-mod-wsgi-py3 libapache2-mod-php
