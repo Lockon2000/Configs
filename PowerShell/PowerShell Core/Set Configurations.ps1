@@ -11,3 +11,5 @@ If (-Not $CurrentlyAdmin)
 
 
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+
+Pause

@@ -5,7 +5,6 @@ Import-Module LockLib
 
 
 Set-Theme Paradox
-
 Set-PSReadLineOption -EditMode Emacs
 
 New-Alias -Name sublime             -Value "C:\Program Files\Sublime Text 3\sublime_text.exe"
