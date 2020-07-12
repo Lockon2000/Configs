@@ -45,7 +45,7 @@ rm composer-setup.php
 
 # Install sass
 wget -O /tmp/sass.tar.gz https://github.com/sass/dart-sass/releases/download/1.26.9/dart-sass-1.26.9-linux-x64.tar.gz
-tar -zxvf /tmp/sass.tar.gz
+tar -zxvf /tmp/sass.tar.gz --directory /tmp
 mv /tmp/dart-sass/* /usr/local/bin
 
 # Install Apache2 and neccessary mods
