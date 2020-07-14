@@ -1,3 +1,5 @@
+[core]
+    autocrlf = true
 [user]
     name = Mohamed Abdelwahab
     email = m.taha2000@outlook.de
@@ -11,3 +13,5 @@
     unstage = reset HEAD -
 [commit]
     template = ~/commit-message-template.txt
+[pull]
+    rebase = false

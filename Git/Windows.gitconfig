@@ -1,5 +1,5 @@
 [core]
-    autocrlf = input
+    autocrlf = true
     editor = 'c:/program files/sublime text 3/sublime_text.exe' -w
 [user]
     name = Mohamed Abdelwahab
@@ -14,3 +14,5 @@
     unstage = reset HEAD -
 [commit]
     template = ~/commit-message-template.txt
+[pull]
+    rebase = false
