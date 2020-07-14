@@ -31,7 +31,7 @@ aptitude install -y php
 
 # Install php utilities
 echo "############### Installing elementary php extensions ###############################################"
-aptitude install php-mbstring php-xml php-intl php-zip php-curl
+aptitude install -y php-mbstring php-xml php-intl php-zip php-curl
 
 echo "############### Installing composer globally ###############################################"
 EXPECTED_CHECKSUM="$(wget -q -O - https://composer.github.io/installer.sig)"
