@@ -1,5 +1,12 @@
 {
     "editor.fontFamily": "'Cascadia Code PL', Consolas, 'Courier New', monospace",
+    // Insert spaces when pressing Tab. This setting is overriden
+    // based on the file contents when `editor.detectIndentation` is true.
+    "editor.insertSpaces": true,
+
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
     "terminal.integrated.fontFamily": "'Cascadia Code PL', Consolas, 'Courier New', monospace",
     
     // Use the splitted editor when modifying the settings in JSON.
@@ -9,12 +16,9 @@
 
     // Specifies the default line ending for new files.
     "files.eol": "\n",      // UNIX Style
+    "files.hotExit": "off",
     
-    "diffEditor.ignoreTrimWhitespace": false,
-
-    // Insert spaces when pressing Tab. This setting is overriden
-    // based on the file contents when `editor.detectIndentation` is true.
-    "editor.insertSpaces": true,
+    "window.restoreWindows": "none",
 
     // Language specific configurations
     "[python]": {
@@ -24,6 +28,14 @@
     },
 
     "[javascript]": {
+        "editor.rulers": [
+            120
+        ]
+    },
+
+    "javascript.implicitProjectConfig.experimentalDecorators": true,
+
+    "[typescript]": {
         "editor.rulers": [
             120
         ]
@@ -60,7 +72,4 @@
         ],
         "editor.tabSize": 2,
     },
-
-    "window.restoreWindows": "none",
-    "files.hotExit": "off",
 }

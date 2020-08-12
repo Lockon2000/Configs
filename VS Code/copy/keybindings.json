@@ -29,5 +29,9 @@
         "key": "ctrl+tab",
         "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+oem_7",
+        "command": "workbench.action.toggleEditorVisibility"
     }
 ]
