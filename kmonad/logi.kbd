@@ -40,8 +40,8 @@
   S-grv  S-1    S-2    S-3    S-4    S-5    S-6    S-7    S-8    S-9    S-0    S--    S-=    S-bspc  S-ins  S-home S-pgup  S-nlck S-kp/  S-kp*  S-kp-
   S-tab  S-q    S-w    S-e    S-r    S-t    S-y    S-u    S-i    S-o    S-p    S-[    S-]    S-ret   S-del  S-end  S-pgdn  S-kp7  S-kp8  S-kp9  S-kp+
   del    S-a    S-s    S-d    S-f    S-g    S-h    S-j    S-k    S-l    S-;    S-'    S-\                                  S-kp4  S-kp5  S-kp6
-  _      S-lsgt S-z    S-x    S-c    S-v    S-b    S-n    S-m    S-,    S-.    S-/           S-rsft         S-up           S-kp1  S-kp2  S-kp3  S-kprt
-  S-lctl S-lmet S-lalt                          S-spc                          S-ralt S-wkup S-rctl  S-left S-down S-rght  S-kp0  S-kp.
+  _      S-lsgt S-z    S-x    S-c    S-v    S-b    S-n    S-m    S-,    S-.    S-/           _              S-up           S-kp1  S-kp2  S-kp3  S-kprt
+  S-lctl S-lmet S-lalt                        S-spc                            S-ralt _      S-rctl  S-left S-down S-rght  S-kp0  S-kp.
 )
 
 (deflayer right-shift-layer
@@ -49,8 +49,8 @@
   RS-grv  RS-1    RS-2    RS-3    RS-4    RS-5    RS-6    RS-7    RS-8    RS-9    RS-0    RS--    RS-=    RS-bspc  RS-ins  RS-home RS-pgup  RS-nlck RS-kp/  RS-kp*  RS-kp-
   RS-tab  RS-q    RS-w    RS-e    RS-r    RS-t    RS-y    RS-u    RS-i    RS-o    RS-p    RS-[    RS-]    RS-ret   RS-del  RS-end  RS-pgdn  RS-kp7  RS-kp8  RS-kp9  RS-kp+
   del     RS-a    RS-s    RS-d    RS-f    RS-g    RS-h    RS-j    RS-k    RS-l    RS-;    RS-'    RS-\                                      RS-kp4  RS-kp5  RS-kp6
-  RS-lsft RS-lsgt RS-z    RS-x    RS-c    RS-v    RS-b    RS-n    RS-m    RS-,    RS-.    RS-/            _                RS-up            RS-kp1  RS-kp2  RS-kp3  RS-kprt
-  RS-lctl RS-lmet RS-lalt                          RS-spc                                 RS-ralt RS-wkup RS-rctl  RS-left RS-down RS-rght  RS-kp0  RS-kp.
+  _       RS-lsgt RS-z    RS-x    RS-c    RS-v    RS-b    RS-n    RS-m    RS-,    RS-.    RS-/            _                RS-up            RS-kp1  RS-kp2  RS-kp3  RS-kprt
+  RS-lctl RS-lmet RS-lalt                                  RS-spc                         RS-ralt _       RS-rctl  RS-left RS-down RS-rght  RS-kp0  RS-kp.
 )
 
 (deflayer left-super-layer
@@ -59,5 +59,5 @@
   M-tab  M-q    M-w    M-e    M-r    M-t    M-y    home   up     end    pgup   M-[    M-]    M-ret   M-del  M-end  M-pgdn  M-kp7  M-kp8  M-kp9  M-kp+
   M-caps M-a    M-s    M-d    M-f    M-g    M-h    left   down   right  pgdn   M-'    M-\                                  M-kp4  M-kp5  M-kp6
   M-lsft M-lsgt M-z    M-x    M-c    M-v    M-b    M-n    M-m    M-,    M-.    M-/           M-rsft         M-up           M-kp1  M-kp2  M-kp3  M-kprt
-  M-lctl _      M-lalt                          M-spc                          M-ralt M-wkup M-rctl  M-left M-down M-rght  M-kp0  M-kp.
+  _      _      _                               M-spc                          _      _      _       M-left M-down M-rght  M-kp0  M-kp.
 )

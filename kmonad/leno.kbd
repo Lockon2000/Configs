@@ -42,8 +42,8 @@
   S-grv  S-1    S-2    S-3    S-4    S-5    S-6    S-7    S-8    S-9    S-0     S--      S-=    S-bspc
   S-tab  S-q    S-w    S-e    S-r    S-t    S-y    S-u    S-i    S-o    S-p     S-[      S-]    S-ret
   del    S-a    S-s    S-d    S-f    S-g    S-h    S-j    S-k    S-l    S-;     S-'      S-\ 
-  _      S-lsgt S-z    S-x    S-c    S-v    S-b    S-n    S-m    S-,    S-.     S-/             S-rsft
-  S-wkup S-lctl S-lmet S-lalt                        S-spc                      S-ralt   S-prnt S-ctl  S-pgup S-up   S-pgdn
+  _      S-lsgt S-z    S-x    S-c    S-v    S-b    S-n    S-m    S-,    S-.     S-/             _
+  _      S-lctl S-lmet S-lalt                        S-spc                      S-ralt   S-prnt S-rctl S-pgup S-up   S-pgdn
                                                                                                        S-left S-down S-rght
 )
 
@@ -52,8 +52,8 @@
   RS-grv  RS-1    RS-2    RS-3    RS-4    RS-5    RS-6    RS-7    RS-8    RS-9    RS-0     RS--      RS-=    RS-bspc
   RS-tab  RS-q    RS-w    RS-e    RS-r    RS-t    RS-y    RS-u    RS-i    RS-o    RS-p     RS-[      RS-]    RS-ret
   del     RS-a    RS-s    RS-d    RS-f    RS-g    RS-h    RS-j    RS-k    RS-l    RS-;     RS-'      RS-\ 
-  RS-lsft RS-lsgt RS-z    RS-x    RS-c    RS-v    RS-b    RS-n    RS-m    RS-,    RS-.     RS-/              _
-  RS-wkup RS-lctl RS-lmet RS-lalt                          RS-spc                          RS-ralt   RS-prnt RS-ctl  RS-pgup RS-up   RS-pgdn
+  _       RS-lsgt RS-z    RS-x    RS-c    RS-v    RS-b    RS-n    RS-m    RS-,    RS-.     RS-/              _
+  _       RS-lctl RS-lmet _                                RS-spc                          RS-ralt   RS-prnt RS-rctl RS-pgup RS-up   RS-pgdn
                                                                                                                      RS-left RS-down RS-rght
 )
 
@@ -63,6 +63,6 @@
   M-tab  M-q    M-w    M-e    M-r    M-t    M-y    home   up     end    pgup    M-[      M-]    M-ret
   M-caps M-a    M-s    M-d    M-f    M-g    M-h    left   down   rght   pgdn    M-'      M-\ 
   M-lsft M-lsgt M-z    M-x    M-c    M-v    M-b    M-n    M-m    M-,    M-.     M-/             M-rsft
-  M-wkup M-lctl _      M-lalt                        M-spc                      M-ralt   M-prnt M-ctl  M-pgup M-up   M-pgdn
+  _      _      _      _                             M-spc                      _        M-prnt _      M-pgup M-up   M-pgdn
                                                                                                        M-left M-down M-rght
 )
