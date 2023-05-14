@@ -19,7 +19,7 @@
 
 
 (defalias
-  hyp  S-C-A-lmet
+  hyp   S-C-A-lmet
   lay1  (tap-next (around-next ralt) (layer-toggle layer1))
 )
 
@@ -29,13 +29,13 @@
   _     _     _    _    _    _    _    _    _    _     _    _     _    _
   _     _     _    _    _    _    _    _    _    _     _    _     _
   _     _     _    _    _    _    _    _    _    _     _    _          _
-  _     _     _              _                             @lay1  _    @hyp
+  _     _     _                        _                    @lay1  _   @hyp
 )
 
 (deflayer layer1
-  _     _     _    _    _    _    _    _    _    _     _    _    _    _
-  _     _     _    _    _    _    _    home up   end   pgup _    _    _
-  _     _     _    _    _    _    _    left down right pgdn _    _
+  _     _     _    _    _    _    _    _    _    _     _    _    _    bspc
+  _     _     _    _    _    _    _    home up   end   pgup _    _    esc
+  del   _     _    _    _    _    _    left down right pgdn _    _
   _     _     _    _    _    _    _    _    _    _     _    _         _
-  _     _     _              _                              _    _    _
+  _     _     _                        _                    _    _    _
 )
